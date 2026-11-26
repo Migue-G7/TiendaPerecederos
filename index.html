@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frescos del Campo | Cliente Demo</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <header class="header-principal">
+        <div>
+            <h1>🌿 Frescos del Campo</h1>
+            <p>Productos perecederos con control de lote y frescura garantizada</p>
+        </div>
+        <div style="text-align: right; display: none;" id="info-simulacion">
+            <small>Vista Cliente Demo</small>
+        </div>
+    </header>
+
+    <main class="contenedor">
+
+        <section class="hero">
+            <div class="hero-texto">
+                <h2>🇨🇴 Lo mejor del campo colombiano, directo a tu mesa</h2>
+                <p>Frutas, verduras, lácteos, carnes y pan del día. Todos nuestros productos manejan control de lote y fecha de vencimiento para que siempre lleves lo más fresco a casa.</p>
+            </div>
+            <div class="hero-badges">
+                <span>🌾 Productos 100% colombianos</span>
+                <span>❄️ Cadena de frío garantizada</span>
+                <span>🏷️ Control de lote y vencimiento</span>
+            </div>
+        </section>
+
+        <section class="barra-filtros">
+            <div class="grupo-filtro">
+                <label for="buscador">Buscar Producto</label>
+                <input type="search" id="buscador" placeholder="Ej: Leche, Queso, Pollo...">
+            </div>
+            
+            <div class="grupo-filtro">
+                <label for="filtro-categoria">Filtrar por Categoría</label>
+                <select id="filtro-categoria">
+                    <option value="Todas">Todas las categorías</option>
+                    <option value="Lácteos">🥛 Lácteos</option>
+                    <option value="Cárnicos">🥩 Cárnicos</option>
+                    <option value="Frutas y Verduras">🍎 Frutas y Verduras</option>
+                    <option value="Panadería">🥐 Panadería</option>
+                </select>
+            </div>
+        </section>
+
+        <div class="cabecera-catalogo">
+            <h2>🛒 Catálogo de productos</h2>
+            <p id="contador-productos"></p>
+        </div>
+
+        <section id="catalogo-cliente" class="grid-productos">
+            <!-- Las llena tienda.js -->
+        </section>
+    </main>
+
+    <footer class="pie-pagina">
+        <div class="contenedor pie-contenido">
+            <div>
+                <h3>🌿 Frescos del Campo</h3>
+                <p>Perecederos con control de lote, stock y frescura garantizada.</p>
+            </div>
+            <div>
+                <h4>Categorías</h4>
+                <p>🥛 Lácteos · 🥩 Cárnicos · 🍎 Frutas y Verduras · 🥐 Panadería</p>
+            </div>
+        </div>
+        <div class="pie-copy">© 2026 Frescos del Campo · Hecho en Colombia 🇨🇴</div>
+    </footer>
+
+    <script src="js/tienda.js"></script>
+</body>
+</html>

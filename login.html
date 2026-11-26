@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión | Frescos del Campo</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body class="pagina-login">
+
+    <main class="contenedor contenedor-login">
+        <section class="panel-card tarjeta-login">
+            <h1 class="titulo-login">🌿 Frescos del Campo</h1>
+            <p class="subtitulo-login">Panel de Administración</p>
+
+            <form id="form-login">
+                <div class="grupo-form">
+                    <label for="usuario">Usuario</label>
+                    <input type="text" id="usuario" required autocomplete="username" placeholder="Ej: admin">
+                </div>
+
+                <div class="grupo-form">
+                    <label for="clave">Contraseña</label>
+                    <input type="password" id="clave" required autocomplete="current-password" placeholder="Tu contraseña">
+                </div>
+
+                <!-- Oculto hasta que falle el login -->
+                <p id="mensaje-error" class="mensaje-error" style="display:none;"></p>
+
+                <button type="submit" class="btn btn-primario" id="btn-ingresar">🔑 Ingresar</button>
+            </form>
+
+            <a class="enlace-volver" href="index.html">← Volver a la tienda</a>
+        </section>
+    </main>
+
+    <script src="js/login.js"></script>
+</body>
+</html>
