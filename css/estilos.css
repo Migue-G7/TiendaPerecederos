@@ -421,7 +421,7 @@ body {
 .btn-peligro:hover { background: #b00020; }
 
 .btn-accion { padding: 0.4rem 0.8rem; font-size: 0.85rem; border-radius: 6px; margin: 0.2rem; }
-.btn-editar { background: var(--alerta); color: var(--blanco); }
+.btn-editar { background: #0f5b34; color: var(--blanco); }
 
 /* Tabla de inventario */
 .tabla-contenedor {
